@@ -1,0 +1,712 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Sansita:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Sansita:wght@700&display=swap');
+
+html{
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+/*********************************************************************
+GLOBAL NAV BAR
+**********************************************************************/
+.navbar-brand img{
+	max-width: 100%;
+	max-height: 40px;
+}
+
+.absolute-container{
+	z-index: 2;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)); /******added transparent background to nav using rgba (https://www.w3schools.com/cssref/func_rgba.php?fbclid=IwAR24X6DBWzLCp1WlqCtLPAjuFB65oj9BoCpidDYTglqXK6XHvNtp971SYww) *******/
+}
+
+.navbar-nav{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.navbar{
+	width: 100%;
+	max-width: 1250px;
+	padding: 20px 0px;
+}
+
+.navbar-nav .nav-item{
+	padding: 0px 10px;
+}
+
+/*********************************************************************
+HERO BANNER
+**********************************************************************/
+#heroHome{
+	background-color: aliceblue;
+	background-image: url("../images/homepage/hero.png");
+	background-position: center;
+	background-size: cover;
+	height: 955px;
+	max-width: 100%;
+}
+
+#heroHistory{
+	background-color: aliceblue;
+	background-image: url("../images/history/hero_history.png");
+	background-position: center;
+	background-size: cover;
+	height: 955px;
+	max-width: 100%;
+}
+
+#heroPeople{
+	background-color: aliceblue;
+	background-image: url("../images/people/hero_People.png");
+	background-position: center;
+	background-size: cover;
+	height: 955px;
+	max-width: 100%;
+}
+
+#heroEcon{
+	background-color: aliceblue;
+	background-image: url("../images/economy/heroEcon.png");
+	background-position: center;
+	background-size: cover;
+	height: 955px;
+	max-width: 100%;
+}
+
+#heroTourism{
+	background-color: aliceblue;
+	background-image: url("../images/tourism/tourism.png");
+	background-position: center;
+	background-size: cover;
+	height: 955px;
+	max-width: 100%;
+}
+
+#heroRef{
+	background-color: aliceblue;
+	background-image: url("../images/tourism/people.png");
+	background-position: center;
+	background-size: cover;
+	height: 955px;
+	max-width: 100%;
+}
+
+
+.display-1{
+	font-size: 80px;
+}
+
+.hero_subtext{
+	padding-top: 250px;
+}
+
+.hero_subtext p{
+	font-size: 18px;
+	padding-top: 30px;
+	max-width: 1116px;
+	font-weight: 200;
+	line-height: 35px;
+}
+
+h4{
+	display: inline-block !important;
+	letter-spacing: 10px;
+}
+
+h1{
+	display: inline-block !important;
+	font-family: 'Sansita', sans-serif;
+	font-size: 120px;
+	line-height: 80px;
+}
+
+hr{
+	border: solid .5px white;
+	width: 550px;
+}
+
+
+/*********************************************************************
+HOME CATEGORIES
+**********************************************************************/
+#category{
+	padding-top: 150px;
+	background-color: white;
+}
+
+#category a{
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 5px;
+}
+
+#category a:hover{
+	text-decoration: none;
+}
+
+#category .row{
+	flex-shrink: 0;
+	min-width: 290px;
+}
+
+#category .catContainer{
+	transition-timing-function: ease-in;
+	transition: .2s;
+}
+
+#category .catContainer:hover {
+	transform: scale(1.1);
+	transition-timing-function: ease-in;
+	transition: .2s;
+}
+
+/*********************************************************************
+HOME ABOUT
+**********************************************************************/
+#about{
+	padding-top: 120px;
+}
+
+#about .container{
+	max-width: 1160px;
+}
+
+.img-about{
+	padding-right: 50px;
+	position: relative;
+	left: -200px;
+}
+
+
+h2{
+	font-family: 'Sansita', sans-serif;
+	font-size: 48px;
+	line-height: 20px;
+}
+
+.about-content{
+	padding-top: 150px;
+}
+
+#about p{
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 35px;
+	padding-top: 30px;
+}
+
+#about .subtext{
+	font-size: 14px;
+	letter-spacing: 5px;
+}
+
+/*********************************************************************
+GLOBAL HERO
+**********************************************************************/
+
+.heroContent{
+	margin-top: 150px;
+	position: relative !important;
+	background-color: white;
+	width: 100%;
+  	box-sizing: border-box;
+	height: 660px;
+}
+
+.heroContent .heroImg{
+	height: auto;
+	object-fit: cover;
+}
+
+.heroContent:before{
+	position:absolute;
+	min-height: calc(50% + 20px);
+	background-color: white;
+}
+
+.heroContent h2{
+	font-size: 42px;
+}
+
+.heroContent p{
+	line-height: 25px;
+}
+
+.heroDes{
+	font-size: 15px;
+	text-align: center;
+}
+
+.heroDes h2{
+	line-height: 45px;
+}
+
+.heroSubtext{
+	color: #9F9F9F;
+	font-size: 14px;
+	letter-spacing: 5px;
+}
+
+
+.footer, .push{
+	height: 600px;
+}
+
+#heroHistory .heroImg{
+	background-image: url("../images/history/geography.png");
+	background-position: center;
+	background-size: cover;
+}
+
+#heroPeople .heroImg{
+	background-image: url("../images/people/bacolodnon.png");
+	background-position: center;
+	background-size: cover;
+}
+
+#heroEcon .heroImg{
+	background-image: url("../images/economy/economy.png");
+	background-position: center;
+	background-size: cover;
+}
+
+#heroTourism .heroImg{
+	background-image: url("../images/tourism/heroTour.png");
+	background-position: center;
+	background-size: cover;
+}
+
+/*********************************************************************
+HISTORY
+**********************************************************************/
+#historyInfo .container{
+	width: 80%;
+	padding-bottom: 0;
+} 
+
+#historyInfo{
+	display: block;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 35px;
+}
+
+/*********************************************************************
+ECONOMY
+**********************************************************************/
+#econInfo .container{
+	width: 80%;
+	padding-bottom: 5%;
+} 
+
+#econInfo{
+	display: block;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 35px;
+}
+
+/*********************************************************************
+PEOPLE
+**********************************************************************/
+
+ /* Make the image fully responsive */
+
+
+#peopleInfo{
+	display: block;
+	padding-bottom: 150px;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 35px;
+}
+
+#peopleInfo .container{
+	width: 80%;
+	padding-top: 120%;
+} 
+
+#peopleCarousel .carousel-caption{
+	text-align: left;
+	color: white;
+	font-size: 14px;
+	top: 70%;
+	transform: translateY(-50%);
+	max-width: 75%;
+	height: 90%;
+}
+
+#peopleCarousel .carousel-inner img {
+    width: 100%;
+    height: 840px;
+	object-fit: cover;
+  }
+
+#peopleCarousel .carousel-caption h2{
+	line-height: 45px;
+}
+
+#peopleGal{
+	padding: 150px 0px;
+}
+
+.peepGal{
+	width: 100%;
+	padding: 2%;
+}
+
+/*********************************************************************
+TOURISM
+**********************************************************************/
+#tourInfo{
+	display: block;
+	padding-bottom: 100px;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 35px;
+}
+
+#tourInfo .container{
+	width: 80%;
+	padding-top: 120%;
+} 
+
+#tourCarousel .carousel-caption{
+	text-align: left;
+	color: white;
+	font-size: 14px;
+	top: 70%;
+	transform: translateY(-50%);
+	max-width: 75%;
+	height: 90%;
+}
+
+#tourCarousel .carousel-inner img {
+    width: 100%;
+    height: 840px;
+	object-fit: cover;
+  }
+
+#tourCarousel .carousel-caption h2{
+	line-height: 45px;
+}
+
+#tourCarousel .carouselSubtext{
+	font-size: 18px;
+	letter-spacing: 10px;
+}
+
+#tourGal{
+	padding: 150px 0px;
+}
+
+.tourGal{
+	width: 100%;
+	padding: 2%;
+}
+
+.tourImg .item{
+	padding-bottom: 20px; 
+}
+
+
+/*********************************************************************
+REFERENCES
+**********************************************************************/
+#refInfo{
+	display: block;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 35px;
+}
+
+#refInfo .container{
+	width: 80%;
+	padding: 5%;
+} 
+
+#refInfo h4{
+	letter-spacing: 0px;
+}
+
+#refInfo ul, a{
+	list-style: none;
+	color: black;
+	padding: 0px;
+}
+
+#refInfo a:hover{
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+}
+
+
+
+/*********************************************************************
+GLOBAL FOOTER
+**********************************************************************/
+#footer{
+	background-image: url("../images/homepage/footer.png");
+	padding: 50px 10px;
+	margin-right: 0px;
+	background-position: center;
+	background-size: cover;
+}
+
+#footer_text{
+	font-size: 10px;
+	font-weight: 200;
+}
+#footer a{
+	text-decoration: none;
+	color: white;
+}
+
+.AboutGov{
+	font-size: 10px;
+	line-height: 10.5px;
+}
+
+
+
+
+/*********************************************************************
+RESPONSIVE QUERIES
+**********************************************************************/
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+	.display-1{
+		font-size: 80px;
+	}
+ 
+	.catContainer{
+		margin-bottom: 40px;
+	}
+ 
+ 
+	.about-content h2{
+		font-size: 25pt;
+	}
+	
+	/*newly added*/
+	
+	#footer .row{
+		text-align: center !important;
+	}
+	
+	.footer, .push{
+		height: 450px;
+	}
+	
+	.heroContent .heroImg{
+		height: 660px;
+		object-fit: cover;
+	}
+	
+	.img-about{
+        padding-right: 50px;
+        order: 2;
+        position: relative;
+        left: -90px;
+        width: 80%;
+        height: auto;
+    }
+
+    .about-content{
+        padding-top: 150px;
+        color: black;
+        order: 1;
+		text-align: center;
+    }
+	
+	.heroDes{
+		margin: 50px 0px;
+	}
+	
+	#econInfo .container{
+		width: 100%;
+		margin-top: 100%;
+	} 
+
+	#historyInfo .container{
+		width: 100%;
+		margin-top: 80%;
+		padding-bottom: 10%
+	} 
+}
+
+
+
+/* medium devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 768px) {
+
+	#category .carousel-caption{
+		position: relative;
+		padding: 0px;
+		bottom: 40px;
+	}
+	#peopleCarousel .carousel-caption{
+		max-width: 50%;
+		text-align: left !important;
+	}
+	
+	#tourCarousel .carousel-caption{
+		max-width: 50%;
+		text-align: left !important;
+	}
+ 
+	#peopleGal .peepGal{
+		padding: 2%;
+	}
+	
+ 
+	#peopleInfo .container{
+		width: 100%;
+		padding-top: 0;
+	}
+	
+	#tourInfo .container{
+		width: 100%;
+		padding-top: 0;
+	}
+ 
+	#econInfo .container{
+		width: 100%;
+		margin-top: 0;
+	} 
+	
+	#historyInfo .container{
+		width: 100%;
+		margin-top: 0;
+		padding-bottom: 20%;
+	}
+	
+	.about-content{
+		padding-top: 150px;
+		color: black;
+		order: 2;
+		text-align: left;
+	}
+	
+	.img-about{
+		padding-right: 50px;
+		order: 1;
+		position: relative;
+		left: -90px;
+		top: 23.5%
+    }
+ 
+	.display-1{
+		font-size: 80px;
+	}
+ 
+	#footer a{
+		font-size: 10px;
+	}
+ 
+	#footer i{
+		font-size: 25px;
+		margin-right: -10px;
+		margin-left: -10px;
+	}
+	
+	.heroSubtext{
+		padding-top: 5%;
+	}
+	
+	.footer, .push{
+		height: 600px;
+	}
+	
+	.heroContent{
+		max-width: 85%;
+		height: auto;
+	}
+	 
+	.heroDes{
+		margin: 0;
+		padding-bottom: 0;
+		text-align: left;
+	}
+	
+
+	
+
+} /*end medium query*/
+
+/* medium devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	#footer a{
+		font-size: 16px;
+	}
+	
+	#historyInfo .container{
+	width: 100%;
+	margin-top: 0;
+	padding-bottom: 10%;
+	}
+ 
+	#footer i{
+		font-size: 28px;
+		margin-right: 2px;
+		margin-left: 2px;
+	}
+
+	
+	.img-about{
+        padding-right: 50px;
+        order: 1;
+        position: relative;
+        left: -150px;
+        top: 0%
+    }
+
+    .about-content{
+        padding-top: 150px;
+        color: black;
+        order: 2;
+		text-align: left;
+        
+    }
+	
+} 
+
+
+
+/**********TOUR GALLERY JAVASCRIPT**********/
+.tourGal-nav{
+    text-align:center;
+}
+.tourGal-nav ul li{
+    display:inline-block;
+    margin:0;
+    list-style:none;
+    padding:10px 15px;
+    cursor:pointer;
+    -webkit-transition:all 05s ease;
+    -moz-transition:all 05s ease;
+    -ms-transition:all 05s ease;
+    -o-transition:all 05s ease;
+    transition:all .5s ease;
+}
+
+.tourImg{
+    /*width:100%;*/
+}
+.tourImg .item{
+    /*width:303px;*/
+    float:left;
+    margin-bottom:10px;
+}
