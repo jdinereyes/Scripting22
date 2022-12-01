@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-image: url("../images/park_bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.formcontainer{
+	background: rgba(255,255,255,0.85);
+	width: 50%;
+	max-width: 700px;
+	margin-bottom: 10%;
+}
+
+.mastheadcontainer{
+	background: #9C3100;
+	width: 50%;
+	max-width: 700px;
+}
+
+.btn{
+	background-color: #9C3100;
+}
+
+.btn:hover{
+	background-color: #E44700;
+}
+
+#output{
+	background: #9C3100;
+	width: 50%;
+	max-width: 700px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
