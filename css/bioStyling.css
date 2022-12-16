@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Brawler:wght@700&family=Lato:wght@400;700&family=Open+Sans&family=Roboto:wght@100&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brawler:wght@700&family=Lato:wght@400;700&family=Open+Sans&family=Roboto:wght@100&display=swap');
+
+html{
+	scroll-behavior: smooth;
+}
+
+/*********************NAV BAR******************/
+.navbar-brand img{
+	max-width: 100%;
+	max-height: 40px;
+}
+
+.absolute-container{
+	z-index: 2;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background: rgba(191,171,151,.6); /******added transparent background to nav using rgba (https://www.w3schools.com/cssref/func_rgba.php?fbclid=IwAR24X6DBWzLCp1WlqCtLPAjuFB65oj9BoCpidDYTglqXK6XHvNtp971SYww) *******/
+}
+
+.navbar-nav{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.navbar{
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px 0px;
+}
+
+.navbar-nav .nav-item{
+	padding: 0px 10px;
+}
+
+
+/*********************HERO BANNER******************/
+#hero{
+	background-color: aliceblue;
+	background-image: url("../images/hero_banner.png");
+	background-position: center;
+	background-size: cover;
+	height: 800px;
+}
+
+h4{
+	display: inline-block !important;
+}
+
+
+
+/*********************ABOUT ME******************/
+#aboutme{
+	padding: 160px 0px;
+}
+
+#aboutme .container{
+	max-width: 1060px;
+}
+
+.img-aboutme{
+	max-width: 435px;
+}
+
+h2{
+	font-family: 'Sacramento', cursive !important;
+	color: #C07758;
+	font-size: 64px;
+}
+
+#aboutme p{
+	color: #4C3A32;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+	text-align: left;
+}
+
+
+
+/*********************ADDITIONAL INFO******************/
+#additionalinfo{
+	padding: 25px 0px;
+	background-color: #FFF7F0;
+}
+
+#additionalinfo p{
+	line-height: 30px;
+	color: #4C3A32;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/*********************PORTFOLIO******************/
+#portfolio{
+	padding: 100px 0px;
+}
+
+#portfolio .container{
+	max-width: 1060px;
+}
+
+#portfolio h6:hover{
+	color: #4C3A32;
+}
+
+
+#portfolio h6{
+	padding: 0px 30px;
+	color: #C7B6AB;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*******"has" is pseudo-class only in CSS where I can make my own tag. I made my own <active> tag so I can set the specific link in my portfolio nav as active (https://css-tricks.com/the-css-has-selector/) ********/
+#portfolio h6:has(active){
+	color: #4C3A32;
+}
+
+
+/*********************FOOTER******************/
+#footer{
+	background-color: #99957D;
+	padding: 30px 0px;
+}
+
+#footer .container{
+	max-width: 1060px;
+}
+
+#footer p{
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
