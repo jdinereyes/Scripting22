@@ -95,14 +95,14 @@ h2{
 	font-family: 'Open Sans', sans-serif;
 }
 
-a {
+.portfolio {
 	color: #C7B6AB !important;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 500;
 	font-size: 18px;
 }
 
-a:hover {
+.portfolio:hover {
 	color: #C7B6AB !important;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 800;
