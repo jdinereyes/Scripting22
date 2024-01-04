@@ -96,17 +96,17 @@ h2{
 }
 
 .portfolio {
-	color: #C7B6AB !important;
+	color: #C07758 !important;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 24px;
 }
 
 .portfolio:hover {
-	color: #C7B6AB !important;
+	color: #C07758 !important;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 800;
-	font-size: 18px;
+	font-size: 24px;
 }
 
 
